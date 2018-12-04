@@ -1,0 +1,13 @@
+galaxy_info:
+  author: Shoma Nishitateno
+  description: Installs and configures an in-memory data structure store.
+  license: license (MIT)
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all
+  galaxy_tags: []
+
+dependencies:
+  - src: shomatan.repo-epel
