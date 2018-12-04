@@ -1,4 +1,5 @@
 galaxy_info:
+  name: redis
   author: Shoma Nishitateno
   description: Installs and configures an in-memory data structure store.
   license: license (MIT)
