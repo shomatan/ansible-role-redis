@@ -5,6 +5,9 @@ Installs and configures an in-memory data structure store.
 None
 
 ## Role Variables
+- redis_bind: 127.0.0.1
+- redis_port: 6379
+- redis_databases: 16
 
 ## Dependencies
 - shomatan.repo-epel

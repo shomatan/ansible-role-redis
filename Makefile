@@ -19,7 +19,11 @@ check: run-container
 
 .PHONY: test
 test: check
-	docker exec -it $(DOCKER_CONTAINER_NAME) $(PLAYBOOK_CMD)
+	docker exec -it $(DOCKER_CONTAINER_NAME) bash -c ' \
+		$(PLAYBOOK_CMD) && \
+		ps -ef | grep redis && \
+		redis-cli info | grep redis_version \
+	'
 
 .PHONY: clean
 clean:
