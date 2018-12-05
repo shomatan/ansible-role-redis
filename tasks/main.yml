@@ -2,8 +2,8 @@
 - name: Ensure redis server is installed.
   yum:
     name: redis
-    enablerepo: epel 
-    state: latest
-  
+    enablerepo: epel
+    state: installed
+
 - name: Ensure redis is started and enabled to start at boot.
   service: name=redis state=started enabled=yes
